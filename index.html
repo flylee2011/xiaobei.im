@@ -117,19 +117,20 @@
 	<div class="container">
 		<div class="col-md-12">
 			<div class="avatar-box">
-				<img class="avatar img-responsive" src="images/avatar.jpg">
+				<img id="avatar-img" class="avatar img-responsive" src="images/avatar.jpg">
+				<img id="weixin-img" class="avatar img-responsive" style="display:none;" src="images/weixin.jpg">
 			</div>
 			<div class="nickname">
 				<img src="images/nickname.png">
 			</div>
 			<div class="sns-icon">
-				<a href="#" class="weixin"><img src="images/icon-weixin.png"></a>
+				<a id="icon-weixin" href="#" class="weixin"><img src="images/icon-weixin.png"></a>
 				<a href="#" class="weibo"><img src="images/icon-weibo.png"></a>
 				<a href="#" class="ins"><img src="images/icon-ins.png"></a>
 				<a href="mailto:info@xiaobei.im" class="email"><img src="images/icon-email.png"></a>
 			</div>
 			<div class="destext">
-				<p>我曾自诩为不怕时光的少年。可我现在怕了，怕得要死。怕老是正在老去的证据，而老去是一场无论如何也打不赢的仗。好在，我们青春过，青春是人生中最伟大的一场虽败犹荣。让大家久等了，#别闹，少年#</p>
+				<p>我曾自诩为不怕时光的少年。可我现在怕了，怕得要死。怕老是正在老去的证据，而老去是一场无论如何也打不赢的仗。<br>好在，我们青春过，青春是人生中最伟大的一场虽败犹荣。让大家久等了，#别闹，少年#</p>
 			</div>
 			<div class="like">
 				<img src="images/like.png">
@@ -147,8 +148,19 @@
 		</div>
 	</div>
 
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript">
-
+		var elWeixin = $('#icon-weixin');
+		var elAvatarImg = $('#avatar-img');
+		var elWeixinImg = $('#weixin-img');
+		elWeixin.on('mouseover', function(){
+			elAvatarImg.hide();
+			elWeixinImg.show();
+		});
+		elWeixin.on('mouseleave', function(){
+			elWeixinImg.hide();
+			elAvatarImg.show();
+		});
 	</script>
 
 </body>
