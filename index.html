@@ -77,7 +77,7 @@
 	}
 
 	.links {
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 	}
 	.links a {
 		display: inline-block;
@@ -105,7 +105,6 @@
 
 	.footer {
 		opacity: 0.8;
-		position: fixed;
 		text-align: center;
 		width: 100%;
 		bottom: 0;
@@ -150,12 +149,14 @@
 				<a href="http://www.amazon.cn/dp/B00IP8Z0CC" target="_blank" class="amazon"><img class="img-responsive" src="images/amazon.png"></a>
 				<a href="http://item.jd.com/11407044.html" target="_blank" class="jd"><img class="img-responsive" src="images/jd.png"></a>
 			</div>
+
+			<div class="footer">
+				<p>© 2014 xiaobei.im, All rights reserved</p>
+			</div>
 		</div>
 	</div>
 
-	<div class="footer">
-		<p>© 2014 xiaobei.im, All rights reserved</p>
-	</div>
+	
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript">
@@ -170,6 +171,20 @@
 			elWeixinImg.hide();
 			elAvatarImg.show();
 		});
+
+		// function checkStyle(){
+		// 	var innerHeight = window.innerHeight - 50;
+		// 	var elContainer = $('#container');
+		// 	elContainer.css({
+		// 		'min-height' : innerHeight
+		// 	});
+		// }
+
+		// checkStyle();
+
+		// $(window).on('resize', function(){
+		// 	checkStyle();
+		// });
 	</script>
 
 </body>
